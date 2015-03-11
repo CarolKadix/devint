@@ -1,0 +1,216 @@
+/**
+ * 
+ * 
+ */
+#fornecedores-home { }
+#fornecedores-home .well {
+	font-size:21px;
+	min-height: 20px;
+    padding: 25px;
+    font-weight: 200;
+}
+
+#fornecedores-home h2 { 
+	font-size: 45px; 
+	margin-top: 10px; 
+	margin-bottom: 40px;
+}
+
+#fornecedores-home p { 
+	font-size: 16px; 
+	padding-bottom: 40px
+}
+#fornecedores-home .btn {
+	margin-left: 16px;
+	width: 160px;
+	height: 40px;
+	background-color: #218fd2;
+	border-radius: 4px;
+	border-bottom: 3px solid #185b84;
+	margin-right: 0;
+}
+
+/**
+ * FORNECEDORES DESTACADOS
+ * 
+ */
+#fornecedores-lista-destacados {
+	
+}
+#fornecedores-lista-comuns h3,
+#fornecedores-lista-destacados h3 {
+	border-bottom:2px solid #e6e6e6;
+	font-size:24px;	
+	padding: 0 0 20px 0;
+    font-weight: 200;
+}
+#fornecedores-lista-destacados .fornecedor-destaque {
+	border:1px solid #e1e1e1;
+	border-radius:5px;
+	margin:15px 0;
+	overflow:hidden;
+}
+#fornecedores-lista-destacados .fornecedor-destaque .fornecedor-destaque-header {
+	background:#6aa83b;
+	color:#fff;
+	font-size:18px;
+	font-weight:300;
+	padding:15px 10px;
+	position:relative;
+	text-align:center;
+}
+#fornecedores-lista-destacados .fornecedor-destaque .fornecedor-destaque-header .triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 9px 0 9px;
+	border-color: #6aa83b transparent transparent transparent;
+	position: absolute;
+	bottom: -9px;
+	left: 50%;
+	margin-left: -9px;
+}
+#fornecedores-lista-destacados .fornecedor-destaque .fornecedor-destaque-logo {
+	text-align:center;
+}
+#fornecedores-lista-destacados .fornecedor-destaque .fornecedor-destaque-contato {
+	background:#e9e9e9;
+	font-size:18px;
+	padding:15px;
+	text-align:center;
+	text-transform:uppercase;
+}
+#fornecedores-lista-destacados .fornecedor-destaque .fornecedor-destaque-contato a {
+	color:#228fd2;
+	text-decoration:underline;
+}
+
+
+
+/**
+ * FORNECEDORES COMUNS
+ * 
+ */
+#fornecedores-lista-comuns .fornecedor-comum {
+	margin:15px 0;
+}
+#fornecedores-lista-comuns .fornecedor-comum .fornecedor-nome {
+	font-size:14px;
+}
+#fornecedores-lista-comuns .fornecedor-comum .fornecedor-info {
+	font-size:13px;
+}
+#fornecedores-lista-comuns .fornecedor-comum .fornecedor-info a {
+	color:#000;
+}
+
+
+
+/**
+ * SIDEBAR
+ * 
+ */
+#sidebar-fornecedores-categorias {
+	border:1px solid #e1e1e1;
+	border-radius:5px;
+	margin:20px 0 20px 0;
+	overflow:hidden;
+}
+#sidebar-fornecedores-categorias h4 {
+	background:#8b8b8b;
+	color:#fff;
+	font-size:19px;
+	font-weight:200;
+	margin:0;
+	padding:15px 20px;
+}
+#sidebar-fornecedores-categorias ul {
+	list-style:none;
+	margin:0 20px;
+	padding:0;
+}
+#sidebar-fornecedores-categorias ul li {
+	border-bottom:1px solid #e1e1e1;
+	margin:0;
+	padding:0;
+}
+#sidebar-fornecedores-categorias ul li:last-child {
+	border:none;
+}
+#sidebar-fornecedores-categorias ul li a {
+	color:#777;
+	display:block;
+	font-size:14px;
+	font-weight:400;
+	padding:10px 0;
+}
+
+/* mobile */
+#sidebar-fornecedores-categorias-mobile {
+	
+}
+
+
+
+/**
+ * FORMULÁRIO
+ * 
+ */
+
+/* modal */
+.modal-content {
+	background:#eaeaea !important;
+}
+.modal-header {
+	border-bottom:none !important;
+}
+.modal-body {
+	padding-top:0 !important;
+}
+
+/* checkbox de termos */
+#formulario .checkbox {
+	font-size:12px;
+	margin-left:20px;
+}
+#formulario .has-error .checkbox {
+	color:#000;
+}
+
+.modal-body #formulario fieldset {
+	margin:0 !important;
+	padding:0 !important;
+}
+/* bug: quando o form não foi enviado, é necessário diminuir o padding apenas do primeiro bloco */
+.hide-modal #fornecedor_block_1 .form-group {
+	padding-right:0;
+}
+
+/* esconder o form em caso de sucesso, para aparecer apenas a mensagem de confirmação */
+.modal-body .form_success fieldset {
+	display:none;
+}
+
+@media (min-width: 992px) {
+	#formulario #fornecedor_atividades_control textarea {
+		height:303px;
+	}
+	#fornecedor_block_3 {
+		height:299px;
+	}
+	#formulario #fornecedor_termos_control {
+		position:absolute;
+		top:40%;
+		left:0;
+	}
+	#formulario #submit_control {
+		position:absolute;
+		bottom:0;
+		left:0;
+		margin-bottom:0;
+	}
+	
+}
+
+
+
