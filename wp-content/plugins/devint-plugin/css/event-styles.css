@@ -406,9 +406,12 @@
 	color:#333;
 	text-transform:uppercase;
 }
-#month-events-month-list li a:hover {
+#month-events-month-list li a:hover,
+#month-events-month-list li a:active,
+#month-events-month-list li .active a{
 	color:#218fd2;
 	text-decoration:none;
+	font-weight: 400;
 }
 #month-events-month-list li.separator {
 	border:1px solid #d5d5d5;
@@ -455,9 +458,9 @@
 }
 
 /* lista de eventos */
-#month-events-list {
-	
-}
+
+#month-events-header { font-size: 18px}
+#month-events-list {padding-top: 20px; }
 .month-events-list-items {
 	position:relative;
 }
@@ -465,7 +468,7 @@
 .month-events-list-items .month-events-list-item {
 	border-bottom:1px solid #dadada;
 	overflow:hidden;
-	padding:20px 0;
+	padding:22px 0 20px;
 	position:relative;
 }
 .month-events-list-items .month-events-list-item:last-child {
@@ -473,8 +476,7 @@
 }
 .month-events-list-items .month-events-list-item .month-events-list-item-date {
 	border:1px solid #d7d7d7;
-	border-top-left-radius:7px;
-	border-top-right-radius:7px;
+	border-radius:7px;	
 	float:left;
 	overflow:hidden;
 	width:180px;
@@ -496,14 +498,19 @@
 	text-transform:uppercase;
 }
 .month-events-list-items .month-events-list-item .month-events-list-item-desc {
-	margin:0 0 0 200px;
+	margin:0 0 0 206px; color: #767676
 }
+.month-events-list-item-desc-text p {font-size: 15px;color: #767676}
+
 .month-events-list-items .month-events-list-item .month-events-list-item-desc .month-events-list-item-desc-title h2 {
 	margin:0;
+	font-size: 25px;
+    font-weight: 600;
+    color: #000;
 }
 .month-events-list-items .month-events-list-item .month-events-list-item-desc .month-events-list-item-desc-title h2 a {
 	color:#218fd2;
-	font-size:18px;
+	font-size:20px;
 	font-weight:200;
 	margin:0 0 0 20px;
 	text-transform:uppercase;
@@ -511,6 +518,7 @@
 .month-events-list-items .month-events-list-item .month-events-list-item-desc .month-events-list-item-desc-info {
 	font-size:16px;
 	margin:20px 0;
+	color: #767676;
 }
 .month-events-list-items .month-events-list-item .month-events-list-item-desc .month-events-list-item-desc-info h2 {
 	margin:0 0 20px;
@@ -521,7 +529,7 @@
 	padding:0 0 0 28px;
 }
 .month-events-list-items .month-events-list-item .month-events-list-item-desc .month-events-list-item-desc-info .month-events-list-item-desc-info-location {
-	background:url(../images/event-ico-location.png) no-repeat left top;
+	background:url(../images/event-ico-location2.png) no-repeat left top;
 	display:inline;
 	margin:0 0 0 15px;
 	padding:0 0 0 30px;
@@ -541,6 +549,7 @@
 	.month-events-list-items .month-events-list-item .month-events-list-item-desc .month-events-list-item-desc-info {
 		clear:both;
 	}
+	
 }
 /**
  * ==================================================
@@ -607,19 +616,15 @@
 .event-widget .widget-event-body .event-widget-price      {background-image:url(../images/event-ico-price.png);}
 
 .event-widget .widget-event-body .event-widget-ticket {
-	font-size:20px;
 	padding:0;
 	text-align:center;
 }
 .event-widget .widget-event-body .event-widget-ticket a {
 	color:#228fd2;
+	font-size: 18px;
 	display:block;
 	text-transform:uppercase;
 }
-
-
-
-
 
 
 

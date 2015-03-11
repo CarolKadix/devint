@@ -4,10 +4,13 @@
  */
 #fornecedores-home { }
 #fornecedores-home .well {
-	font-size:21px;
+	font-size:24px;
 	min-height: 20px;
     padding: 25px;
     font-weight: 200;
+    background-color: #e7e7e7;
+    box-shadow: none;
+    text-align: center;
 }
 
 #fornecedores-home h2 { 
@@ -72,6 +75,9 @@
 }
 #fornecedores-lista-destacados .fornecedor-destaque .fornecedor-destaque-logo {
 	text-align:center;
+}
+#fornecedores-lista-destacados .fornecedor-destaque .fornecedor-destaque-logo img {
+	text-align: center; padding: 15px 0;
 }
 #fornecedores-lista-destacados .fornecedor-destaque .fornecedor-destaque-contato {
 	background:#e9e9e9;
@@ -141,7 +147,7 @@
 	color:#777;
 	display:block;
 	font-size:14px;
-	font-weight:400;
+	font-weight:200;
 	padding:10px 0;
 }
 

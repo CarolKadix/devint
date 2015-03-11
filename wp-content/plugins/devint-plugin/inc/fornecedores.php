@@ -76,20 +76,20 @@ class Fornecedores_List {
 	function home(){
 		global $post;
 		?>
-		<div class="row">
+		
 			<div class="col-md-4">
 				<?php $this->sidebar_categorias(); ?>
 			</div>
 			<div class="col-md-8">
 				<div id="fornecedores-home">
-					<h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio enim, molestie non, pretium ut</h1>
+					
 					<?php echo apply_filters('the_content', $post->post_content); ?>
 					
 					<div class="well">
 						Sua empresa ainda não faz parte do nosso guia? <button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#myModal">CLIQUE AQUI</button>
 					</div>
 				</div>
-			</div>
+			
 		</div>
 		<?php
 		$success = '<div class="alert-message message success alert alert-success" rel="success">Cadastro enviado com sucesso!</div>';

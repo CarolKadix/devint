@@ -27,7 +27,7 @@
 
 #video-large-desc p{
 	padding-bottom: 0;
-	font-size: 18px;
+	font-size: 17px;
 	padding-top: 10px;
     padding-left: 5px;
     font-weight: 200;
@@ -56,7 +56,7 @@ h3#video-large-title { font-size: 32px; padding-top: 0; margin-bottom: 20px; mar
 	background:url(../images/video-ico-date-large.png) no-repeat left center;
 	padding-left: 36px;
 	height: 30px;
-	font-size: 16px;
+	font-size: 15px;
 	vertical-align: center;
 	padding-top: 4px;
 	font-weight: 200;
@@ -78,7 +78,7 @@ h3#video-large-title { font-size: 32px; padding-top: 0; margin-bottom: 20px; mar
 #video-tabs {
 	border:none;
 	padding:0 0 20px;
-	margin-left: -25px;
+	margin-left: -10px;
 }
 #video-tabs li {
 	padding-bottom:5px;
@@ -124,8 +124,8 @@ h3#video-large-title { font-size: 32px; padding-top: 0; margin-bottom: 20px; mar
 	border-width: 3px;
 }
 #share { 
-	bottom: -35px;
-	position: absolute;
+	bottom: 0;
+	padding-top: 34px;
 	width: 470px;
 }
 #share .addthis_native_toolbox{
@@ -145,11 +145,15 @@ h3#video-large-title { font-size: 32px; padding-top: 0; margin-bottom: 20px; mar
 }
 #video-grid .tab-content .tab-pane .video-item {
 	position:relative;
+	width: 198px;
+    padding-right: 0;
 }
 #video-grid .tab-content .tab-pane .video-item .video-thumb {
 	cursor:pointer;
 	overflow:hidden;
 	position:relative;
+	width: 185px;
+	height: 100px;
 }
 #video-grid .tab-content .tab-pane .video-item .video-thumb .overlay {
 	background:rgba(0,0,0,0.6);
@@ -170,6 +174,7 @@ h3#video-large-title { font-size: 32px; padding-top: 0; margin-bottom: 20px; mar
 	display:block;
 	margin:0 auto;
 	position:relative;
+	width: 185px;
 	z-index:1;
 }
 #video-grid .tab-content .tab-pane .video-item .video-thumb img:hover{
@@ -183,6 +188,8 @@ h3#video-large-title { font-size: 32px; padding-top: 0; margin-bottom: 20px; mar
 }
 
 #video-grid .tab-content .tab-pane .video-item h3:hover {color: #1190cd;}
+#video-grid .tab-content .tab-pane .video-item img:hover {border:3px solid #1190cd; border-radius: 3px}
+#video-grid .tab-content .tab-pane .video-item img {border:3px solid #fff;}
 #video-grid .tab-content .tab-pane .video-item .video-date {
 	background:url(../images/video-ico-date.png) no-repeat left center;
 	font-size: 13px;

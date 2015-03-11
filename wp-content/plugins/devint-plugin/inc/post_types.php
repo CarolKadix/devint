@@ -39,6 +39,7 @@ function register_post_types(){
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'has_archive' => false,
+		'menu_position' => 5,
 		'menu_icon' => 'dashicons-calendar',
 		'supports' => array(
 			'title',
@@ -86,6 +87,7 @@ function register_post_types(){
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'has_archive' => false,
+		'menu_position' => 6,
 		'menu_icon' => 'dashicons-video-alt3',
 		'supports' => array(
 			'title',
@@ -135,6 +137,7 @@ function register_post_types(){
 		'capability_type' => 'post',
 		'hierarchical' => false,
 		'has_archive' => false,
+		'menu_position' => 7,
 		'menu_icon' => 'dashicons-groups',
 		'supports' => array(
 			'title',

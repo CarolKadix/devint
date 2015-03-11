@@ -212,8 +212,16 @@ class Canal_Videos {
 				<h3 id="video-large-title"><?php echo apply_filters('the_title', $last_video->posts[0]->post_title); ?></h3>
 				<p id="video-large-date" class="video-date">Postado em 25 de novembro de 2014</p>
 				<p id="video-large-category" class="video-category"><?php echo $cats[0]->name; ?></p>
-				<div id="video-large-desc"><?php echo apply_filters('the_content', boros_excerpt_letters($last_video->posts[0]->post_content, 230)); ?></div>
-				<div class="share"></div>
+				<div id="video-large-desc"><?php echo apply_filters('the_content', boros_excerpt_letters($last_video->posts[0]->post_content, 230)); ?>
+                     <div id="share">
+				    <div class="addthis_native_toolbox"></div> 
+					<span class="url">LINK <a href="<?php fts_show_shorturl($post); ?>" class="urlshort" >
+					    <?php fts_show_shorturl($post); ?></a>					  
+					</span> 
+				</div>
+
+				</div>
+				
 			</div>
 		</div>
 		<?php
@@ -222,10 +230,10 @@ class Canal_Videos {
 	function output_video_grid(){
 		$cats = $this->get_video_categories();
 		?>
-		<div class="row" id="video-grid">
-			<div class="col-md-4">BANNERS</div>
+		<div class="row" id="video-grid">			
+			<?php get_sidebar('left'); ?>
 			<div class="col-md-8">
-				<div class="col-md-12">
+				<div class="col-md-12 no-padding right">
 					<div role="tabpanel">
 						<?php $this->get_tabs(); ?>
 						<?php $this->get_panels(); ?>
