@@ -18,6 +18,8 @@
 /wp-content/themes/*
 !/wp-content/themes/devdmbootstrap3
 /wp-content/themes/devdmbootstrap3/advanced-custom-fields
+!/wp-content/themes/strapdix
+/wp-content/themes/strapdix/advanced-custom-fields
 .htaccess
 *.log
 sitemap.xml
