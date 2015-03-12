@@ -41,20 +41,40 @@ function filter_faq_pre_get_posts( $query ){
 	return $query;
 }
 
-function devint_faq(){
-	$faq = new Devint_Faq();
+function devint_faq_sidebar(){
+	$faq = Devint_Faq::init();
+	$faq->show_sidebar();
+}
+
+function devint_faq_form(){
+	$faq = Devint_Faq::init();
+	$faq->show_form();
 }
 
 class Devint_Faq {
 	
 	var $current_category = 0;
 	
+	private static $instance;
+	
+	public static function init(){
+		if( empty( self::$instance ) ){
+			self::$instance = new Devint_Faq();
+		}
+		return self::$instance;
+	}
 	
 	function __construct(){
 		
 	}
 	
+	function show_sidebar(){
+		echo '#sidebar';
+	}
 	
+	function show_form(){
+		echo '#form';
+	}
 	
 	
 	
