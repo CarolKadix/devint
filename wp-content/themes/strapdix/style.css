@@ -512,12 +512,14 @@ a.back:hover, a.urlshort:hover  {text-decoration: none; color: #000}
 #news-group { margin-left: -25px;}
 
 
+/* 
 .container .form-control {
 border: 1px solid #b8b8b8;
 background: #fff url(img/search.png) no-repeat 0 center;
 padding-left: 30px;
 width: 475px;
 }
+ */
 
 
 .footer_search input#search {
