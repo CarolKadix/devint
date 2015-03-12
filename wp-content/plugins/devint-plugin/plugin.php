@@ -41,6 +41,7 @@ include_once('inc/taxonomies.php');
 include_once('inc/eventos.php');
 include_once('inc/videos.php');
 include_once('inc/fornecedores.php');
+include_once('inc/faq.php');
 include_once('inc/widgets.php');
 include_once('inc/frontend-forms.php');
 
